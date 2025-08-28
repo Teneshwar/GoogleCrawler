@@ -1,4 +1,4 @@
-###Google Email Crawler & Outreach Automation
+###Google Crawler 
 
 This project is a JavaScript-based automation tool that streamlines lead generation and email outreach for businesses. It automatically searches Google using custom queries, scrapes websites for email addresses, and sends personalized outreach emails using Gmail SMTP.
 
@@ -56,7 +56,9 @@ npm install
 ##Create a .env file:
 
 GMAIL_USER=your_email@gmail.com
+
 GMAIL_APP_PASSWORD=your_app_password
+
 DRY_RUN=true
 
 ##Usage
