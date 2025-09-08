@@ -1,59 +1,68 @@
-###Google Crawler 
+📊 Google Crawler
 
-This project is a JavaScript-based automation tool that streamlines lead generation and email outreach for businesses. It automatically searches Google using custom queries, scrapes websites for email addresses, and sends personalized outreach emails using Gmail SMTP.
+A simple JavaScript tool that helps businesses find leads and send emails automatically.
+It searches Google, collects email addresses from websites, and sends personalized emails using Gmail.
 
-##Key Features
+✅ Key Features
 
-Automated Google search queries: Enter queries like “dentist in Delhi email” to fetch relevant websites.
+🔍 Automated Google Search
+Just add search terms like dentist in Delhi email and it finds relevant websites.
 
-Email scraping: Extracts emails from websites using Cheerio and filters out invalid or placeholder addresses.
+✉️ Email Scraping
+Gathers real email addresses from websites and ignores fake ones.
 
-CSV storage: Saves collected leads in leads.csv and logs sent emails in sent_emails.csv for easy tracking.
+💾 CSV Storage
+Saves leads in leads.csv and keeps track of sent emails in sent_emails.csv.
 
-Automated emailing: Sends emails using Nodemailer with Gmail credentials, supporting personalized templates.
+📤 Automatic Email Sending
+Uses Gmail (via Nodemailer) to send personalized emails to leads.
 
-Dry-run mode: Simulate sending emails without actually delivering them for safe testing.
+🧪 Dry-Run Mode
+Test without actually sending emails, to make sure everything works safely.
 
-Throttle control: Sends emails at controlled intervals to reduce spam risk.
+⏱️ Throttle Control
+Controls sending speed to avoid spam filters.
 
-##Tech Stack
+⚡ Tech Stack
 
-Language: JavaScript (Node.js)
+✅ Language: JavaScript (Node.js)
 
-Packages: Axios, Cheerio, csv-parser, csv-writer, Nodemailer, dotenv
+✅ Packages: Axios, Cheerio, csv-parser, csv-writer, Nodemailer, dotenv
 
-Email Service: Gmail SMTP
+✅ Email Service: Gmail SMTP
 
-##How it Works
+🚀 How It Works
 
-Load search queries from queries.txt.
+Add your search queries in queries.txt.
 
-The crawler fetches search results and scans websites for emails.
+The crawler searches Google and visits websites.
 
-Emails are validated, deduplicated, and saved in a CSV file.
+It collects and filters valid emails.
 
-The email sender reads this CSV and dispatches personalized messages to each valid email.
+Saves them in leads.csv.
 
-All activity is logged, ensuring transparency and repeatability.
+Sends emails using the list.
 
-##Installation
+Logs all actions in CSV files for easy tracking.
 
-Clone the repository:
+⚙️ Installation
+
+Clone the project
 
 git clone <repository-url>
 
 
-##Navigate to the project directory:
+Go to the project folder
 
 cd GoogleCrawlerInJs
 
 
-##Install dependencies:
+Install dependencies
 
 npm install
 
 
-##Create a .env file:
+Create a .env file with these details:
 
 GMAIL_USER=your_email@gmail.com
 
@@ -61,14 +70,16 @@ GMAIL_APP_PASSWORD=your_app_password
 
 DRY_RUN=true
 
-##Usage
+▶️ Usage
 
-Add your search queries in queries.txt.
+Add your search queries in queries.txt (one query per line).
 
-Run the crawler to collect emails:
+Run the crawler:
 
 npm run crawl
 
+
+Check leads.csv for collected emails and sent_emails.csv for sent emails.
 
 ##Send emails:
 
