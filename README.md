@@ -1,26 +1,33 @@
 📊 Google Crawler
 
 A simple JavaScript tool that helps businesses find leads and send emails automatically.
+
 It searches Google, collects email addresses from websites, and sends personalized emails using Gmail.
 
 ✅ Key Features
 
 🔍 Automated Google Search
+
 Just add search terms like dentist in Delhi email and it finds relevant websites.
 
 ✉️ Email Scraping
+
 Gathers real email addresses from websites and ignores fake ones.
 
 💾 CSV Storage
+
 Saves leads in leads.csv and keeps track of sent emails in sent_emails.csv.
 
 📤 Automatic Email Sending
+
 Uses Gmail (via Nodemailer) to send personalized emails to leads.
 
 🧪 Dry-Run Mode
+
 Test without actually sending emails, to make sure everything works safely.
 
 ⏱️ Throttle Control
+
 Controls sending speed to avoid spam filters.
 
 ⚡ Tech Stack
